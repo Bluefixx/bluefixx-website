@@ -32,8 +32,8 @@ export default function Navbar() {
           <Image
             src="/icons/logoMain.svg"
             alt="BlueFixx Logo"
-            width={140}
-            height={36}
+            width={60}
+            height={76}
             priority
             className="object-contain"
           />
@@ -47,11 +47,10 @@ export default function Navbar() {
               <Link
                 key={link.label}
                 href={link.href}
-                className={`font-sans text-[14px] leading-[20px] font-normal transition-all duration-200 pb-1 ${
-                  isActive
-                    ? "text-black border-b-[2px] border-black font-medium"
-                    : "text-neutral-600 hover:text-black"
-                }`}
+                className={`font-sans text-[14px] leading-[20px] font-normal transition-all duration-200 pb-1 ${isActive
+                  ? "text-black border-b-[2px] border-black font-medium"
+                  : "text-neutral-600 hover:text-black"
+                  }`}
               >
                 {link.label}
               </Link>
