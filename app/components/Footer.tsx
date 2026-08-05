@@ -181,7 +181,7 @@ export default function Footer() {
 
       {/* Divider & Copyright */}
       <div className="w-full border-t border-[#C4C5DA] pt-6">
-        <div className="max-w-7xl mx-auto px-6 md:px-[64px] flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="mx-auto px-6 md:px-[64px] flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Copyright */}
           <p className="text-[14px] text-center md:text-left font-sans font-semibold md:font-semibold max-md:font-normal text-[#444657] max-md:text-[#76777D] leading-[14px] max-md:leading-[21px] tracking-[0.7px] max-md:tracking-[0px]">
             © 2026 BlueFixx Marketplace. All rights reserved.
