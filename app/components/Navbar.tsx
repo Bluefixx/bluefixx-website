@@ -1,0 +1,136 @@
+"use client";
+
+import React, { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  const navLinks = [
+    { label: "Home", href: "/" },
+    { label: "Workers", href: "/workers" },
+    { label: "Customers", href: "/customers" },
+    { label: "Talents", href: "/talents" },
+  ];
+
+  const mobileNavLinks = [
+    { label: "For workers", href: "/workers" },
+    { label: "For customers", href: "/customers" },
+    { label: "For talents", href: "/talents" },
+    { label: "How it works", href: "/how-it-works" },
+    { label: "FAQ", href: "/faq" },
+  ];
+
+  return (
+    <nav className="relative w-full bg-white z-50 border-b border-neutral-200">
+      <div className="max-w-7xl mx-auto px-6 h-[80px] flex items-center justify-between">
+        {/* Logo */}
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/icons/logoMain.svg"
+            alt="BlueFixx Logo"
+            width={140}
+            height={36}
+            priority
+            className="object-contain"
+          />
+        </Link>
+
+        {/* Desktop Nav Links */}
+        <div className="hidden md:flex items-center gap-8">
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <Link
+                key={link.label}
+                href={link.href}
+                className={`font-sans text-[14px] leading-[20px] font-normal transition-all duration-200 pb-1 ${
+                  isActive
+                    ? "text-black border-b-[2px] border-black font-medium"
+                    : "text-neutral-600 hover:text-black"
+                }`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
+        </div>
+
+        {/* Desktop Action Buttons */}
+        <div className="hidden md:flex items-center gap-4">
+          <Link
+            href="/signin"
+            className="flex items-center justify-center border-[1.5px] border-primary-900 text-primary-900 hover:bg-primary-100 transition-colors font-sans font-semibold text-[14px] px-6 py-2.5 rounded-lg h-[44px]"
+          >
+            Sign in
+          </Link>
+          <Link
+            href="/download"
+            className="flex items-center justify-center gap-2 bg-primary-900 text-white hover:bg-primary-800 transition-colors font-sans font-semibold text-[14px] px-6 py-2.5 rounded-lg h-[44px]"
+          >
+            Download App
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </Link>
+        </div>
+
+        {/* Mobile Hamburger Button */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden p-2 text-primary-900 focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          {isOpen ? (
+            // Close SVG
+            <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          ) : (
+            // Hamburger SVG
+            <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          )}
+        </button>
+      </div>
+
+      {/* Mobile Menu Dropdown */}
+      {isOpen && (
+        <div className="absolute top-[80px] left-0 w-full bg-white border-b border-neutral-300 md:hidden flex flex-col px-6 py-8 gap-6 shadow-lg animate-in fade-in slide-in-from-top-5 duration-200">
+          <div className="flex flex-col gap-5">
+            {mobileNavLinks.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+                className="font-sans text-[14px] leading-[16px] font-semibold text-[#102A43] hover:opacity-80 transition-opacity"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-4">
+            <Link
+              href="/signin"
+              onClick={() => setIsOpen(false)}
+              className="flex w-full items-center justify-center bg-primary-900 text-white hover:bg-primary-800 transition-colors font-sans font-semibold text-[16px] py-4 rounded-lg h-[54px]"
+            >
+              Sign Up
+            </Link>
+          </div>
+        </div>
+      )}
+    </nav>
+  );
+}
