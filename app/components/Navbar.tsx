@@ -1,13 +1,23 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Button from "./Button";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navLinks = [
     { label: "Home", href: "/" },
@@ -25,8 +35,12 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="relative w-full bg-white z-50 border-b border-neutral-200">
-      <div className="max-w-7xl mx-auto px-6 h-[80px] flex items-center justify-between">
+    <nav className={`sticky top-0 w-full z-50 border-b transition-all duration-300 ${
+      isScrolled 
+        ? "bg-white/95 backdrop-blur-md border-neutral-200 shadow-sm" 
+        : "bg-transparent border-transparent"
+    }`}>
+      <div className="mx-auto px-6 py-2.5 md:py-[12px] md:px-8 lg:px-[64px] flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
@@ -40,7 +54,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav Links */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-4 lg:gap-8">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -59,27 +73,29 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Action Buttons */}
-        <div className="hidden md:flex items-center gap-4">
-          <Link
-            href="/signin"
-            className="flex items-center justify-center border-[1.5px] border-primary-900 text-primary-900 hover:bg-primary-100 transition-colors font-sans font-semibold text-[14px] px-6 py-2.5 rounded-lg h-[44px]"
-          >
-            Sign in
+        <div className="hidden md:flex items-center gap-2 lg:gap-4">
+          <Link href="/signin">
+            <Button variant="outlined" size="large">
+              Sign in
+            </Button>
           </Link>
-          <Link
-            href="/download"
-            className="flex items-center justify-center gap-2 bg-primary-900 text-white hover:bg-primary-800 transition-colors font-sans font-semibold text-[14px] px-6 py-2.5 rounded-lg h-[44px]"
-          >
-            Download App
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              viewBox="0 0 24 24"
+          <Link href="/download">
+            <Button
+              variant="solid"
+              size="large"
+              className="gap-2 group"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-            </svg>
+              Download App
+              <svg
+                className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </Button>
           </Link>
         </div>
 
@@ -120,12 +136,10 @@ export default function Navbar() {
           </div>
 
           <div className="mt-4">
-            <Link
-              href="/signin"
-              onClick={() => setIsOpen(false)}
-              className="flex w-full items-center justify-center bg-primary-900 text-white hover:bg-primary-800 transition-colors font-sans font-semibold text-[16px] py-4 rounded-lg h-[54px]"
-            >
-              Sign Up
+            <Link href="/signin" onClick={() => setIsOpen(false)} className="w-full">
+              <Button variant="solid" size="giant" className="w-full">
+                Sign Up
+              </Button>
             </Link>
           </div>
         </div>

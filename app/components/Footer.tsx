@@ -35,9 +35,9 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="w-full bg-white border-t border-neutral-200 font-sans pt-12 md:pt-16 pb-8 px-6 md:px-12 lg:px-24">
+    <footer className="w-full bg-white border-t border-[#C4C5DA] font-sans pt-12 md:pt-16 pb-8">
       {/* Top section: logo/intro and link columns */}
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12 md:gap-8 pb-12">
+      <div className="mx-auto px-6 md:px-[64px] flex flex-col md:flex-row justify-between gap-12 md:gap-8 pb-12">
 
         {/* Brand Column */}
         <div className="flex flex-col gap-6 max-w-sm">
@@ -80,7 +80,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
           {/* Platform */}
           <div className="flex flex-col gap-4">
-            <h4 className="text-[14px] leading-[14px] font-semibold text-[#151C27] max-md:text-black tracking-[0.7px] max-md:tracking-[0.28px] uppercase">
+            <h4 className="text-[14px] leading-[14px] font-semibold text-[#151C27] max-md:text-black tracking-[0.7px] max-md:tracking-[0.28px]">
               Platform
             </h4>
             <div className="flex flex-col gap-3">
@@ -98,7 +98,7 @@ export default function Footer() {
 
           {/* Company */}
           <div className="flex flex-col gap-4">
-            <h4 className="text-[14px] leading-[14px] font-semibold text-[#151C27] max-md:text-black tracking-[0.7px] max-md:tracking-[0.28px] uppercase">
+            <h4 className="text-[14px] leading-[14px] font-semibold text-[#151C27] max-md:text-black tracking-[0.7px] max-md:tracking-[0.28px]">
               Company
             </h4>
             <div className="flex flex-col gap-3">
@@ -116,7 +116,7 @@ export default function Footer() {
 
           {/* Legal */}
           <div className="flex flex-col gap-4">
-            <h4 className="text-[14px] leading-[14px] font-semibold text-[#151C27] max-md:text-black tracking-[0.7px] max-md:tracking-[0.28px] uppercase">
+            <h4 className="text-[14px] leading-[14px] font-semibold text-[#151C27] max-md:text-black tracking-[0.7px] max-md:tracking-[0.28px]">
               Legal
             </h4>
             <div className="flex flex-col gap-3">
@@ -134,7 +134,7 @@ export default function Footer() {
 
           {/* Support (Desktop Only) */}
           <div className="hidden md:flex flex-col gap-4">
-            <h4 className="text-[14px] leading-[14px] font-semibold text-[#151C27] tracking-[0.7px] uppercase">
+            <h4 className="text-[14px] leading-[14px] font-semibold text-[#151C27] tracking-[0.7px]">
               Support
             </h4>
             <div className="flex flex-col gap-3">
@@ -153,7 +153,7 @@ export default function Footer() {
       </div>
 
       {/* Download Section (Responsive Alignment) */}
-      <div className="max-w-7xl mx-auto flex flex-col items-start md:items-end gap-3 pb-8">
+      <div className="max-w-7xl mx-auto px-6 md:px-[64px] flex flex-col items-start md:items-end gap-3 pb-8">
         <span className="text-[12px] leading-[16px] font-medium text-[#001B40] tracking-normal uppercase">
           Download App
         </span>
@@ -179,12 +179,14 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Divider */}
-      <div className="max-w-7xl mx-auto border-t border-[#C4C5DA] pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-        {/* Copyright */}
-        <p className="text-[14px] text-center md:text-left font-sans font-semibold md:font-semibold max-md:font-normal text-[#444657] max-md:text-[#76777D] leading-[14px] max-md:leading-[21px] tracking-[0.7px] max-md:tracking-[0px]">
-          © 2026 BlueFixx Marketplace. All rights reserved.
-        </p>
+      {/* Divider & Copyright */}
+      <div className="w-full border-t border-[#C4C5DA] pt-6">
+        <div className="max-w-7xl mx-auto px-6 md:px-[64px] flex flex-col md:flex-row justify-between items-center gap-4">
+          {/* Copyright */}
+          <p className="text-[14px] text-center md:text-left font-sans font-semibold md:font-semibold max-md:font-normal text-[#444657] max-md:text-[#76777D] leading-[14px] max-md:leading-[21px] tracking-[0.7px] max-md:tracking-[0px]">
+            © 2026 BlueFixx Marketplace. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );
