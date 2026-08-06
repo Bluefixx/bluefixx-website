@@ -16,12 +16,12 @@ export default function Home() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 py-20 flex flex-col items-center text-center justify-center">
           {/* Main Heading */}
           <h1 className="font-poppins font-normal md:font-bold text-[36px] md:text-[48px] leading-[54px] md:leading-[60px] tracking-[0px] text-white max-w-3xl">
-            Bridging the gap in professional home services.
+            Bridging the gap in <br className="hidden md:block" /> professional home <br className="hidden md:block" /> services.
           </h1>
 
           {/* Subtext */}
           <p className="font-sans font-normal text-[16px] md:text-[20px] leading-[25.6px] md:leading-[28px] tracking-[0px] text-[#D4D4D4] max-w-2xl mt-6 md:mt-8">
-            BlueFixx connects verified professionals, eager customers, and the next generation of apprentices in one unified marketplace.
+            BlueFixx connects verified professionals, eager <br className="hidden md:block" /> customers, and the next generation of apprentices <br className="hidden md:block" /> in one unified marketplace.
           </p>
 
           {/* Download App Sub-label (hidden on mobile) */}
