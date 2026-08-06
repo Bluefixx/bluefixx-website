@@ -12,6 +12,17 @@
   --font-poppins: var(--font-poppins), sans-serif;
   --font-mono: var(--font-geist-mono), monospace;
 
+  --animate-scroll: scroll 25s linear infinite;
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
   /* Primary Scale (#001B40 is 900) */
   --color-primary-100: #E6F0FA;
   --color-primary-200: #B3D1F5;
