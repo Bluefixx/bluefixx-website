@@ -17,8 +17,39 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Bluefixx - Job Opportunities for Blue Collar Professionals",
-  description: "Connecting skilled blue collar professionals with job opportunities near them.",
+  title: "BlueFixx | Trusted hands for every job",
+  description: "BlueFixx connects verified professionals, eager customers, and the next generation of apprentices in one unified marketplace. Find reliable home services today.",
+  keywords: ["home services", "verified professionals", "handyman", "plumber", "electrician", "apprenticeships", "Africa", "BlueFixx"],
+  openGraph: {
+    title: "BlueFixx | Trusted hands for every job",
+    description: "BlueFixx connects verified professionals, eager customers, and the next generation of apprentices in one unified marketplace.",
+    url: "https://bluefixx.com",
+    siteName: "BlueFixx",
+    images: [
+      {
+        url: "/images/hero.png",
+        width: 1200,
+        height: 630,
+        alt: "BlueFixx - Professional Home Services",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BlueFixx | Trusted hands for every job",
+    description: "BlueFixx connects verified professionals, eager customers, and the next generation of apprentices in one unified marketplace.",
+    images: ["/images/hero.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  viewport: "width=device-width, initial-scale=1",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
