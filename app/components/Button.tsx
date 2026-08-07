@@ -1,7 +1,7 @@
 import React from "react";
 
 type ButtonProps = {
-  variant?: "solid" | "outlined";
+  variant?: "solid" | "outlined" | "white";
   size?: "giant" | "large" | "medium" | "small" | "tiny";
   children: React.ReactNode;
   className?: string;
@@ -32,6 +32,7 @@ export default function Button({
   const variantClasses = {
     solid: "bg-primary-900 text-white hover:bg-primary-800 border border-transparent disabled:bg-primary-200",
     outlined: "bg-transparent text-primary-900 border-[1.5px] border-primary-900 hover:bg-primary-100 disabled:border-primary-200 disabled:text-primary-200",
+    white: "bg-white !text-black hover:bg-white/90 border border-transparent",
   };
 
   return (
@@ -39,7 +40,7 @@ export default function Button({
       type={type}
       disabled={disabled}
       onClick={onClick}
-      className={`inline-flex items-center justify-center font-sans font-semibold transition-all duration-200 select-none ${sizeClasses[size]} ${variantClasses[variant]} ${className}`}
+      className={`inline-flex items-center justify-center font-sans font-semibold transition-all duration-200 select-none ${variantClasses[variant]} ${sizeClasses[size]} ${className}`}
     >
       {children}
     </button>

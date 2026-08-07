@@ -17,9 +17,9 @@ export default function GetStarted() {
         <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
           <Link href="/signup" className="w-full md:w-auto">
             <Button
-              variant="solid"
+              variant="white"
               size="large"
-              className="w-full md:min-w-[200px] bg-white text-[#001B40] hover:bg-white/90"
+              className="w-full md:min-w-[200px]"
             >
               Create Account
             </Button>
