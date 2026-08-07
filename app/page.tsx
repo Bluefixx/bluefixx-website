@@ -149,8 +149,8 @@ export default function Home() {
               />
             </div>
             {/* Overlay Inset padding wrapper */}
-            <div className="px-4 pb-4 lg:px-6 lg:pb-6 flex-grow flex flex-col">
-              <div className="relative z-10 bg-white p-8 flex flex-col items-center text-center details-shadow -mt-8 lg:-mt-12 flex-grow justify-between gap-6 rounded-[4px] lg:rounded-none">
+            <div className="px-4 pb-4 lg:px-6 lg:pb-12 flex-grow flex flex-col gap-3">
+              <div className="relative z-10 bg-white pt-5 pb-8 px-8 flex flex-col items-center text-center details-shadow -mt-8 lg:-mt-12 flex-grow rounded-[4px] lg:rounded-none">
                 <div className="flex flex-col items-center">
                   <h3 className="font-poppins font-semibold lg:font-bold text-[24px] leading-[33.6px] lg:leading-[32px] text-[#191C1E] lg:text-[#121212]">
                     For Workers
@@ -160,12 +160,12 @@ export default function Home() {
                     <span className="inline lg:hidden">Find consistent work, manage your schedule, and grow your local business.</span>
                   </p>
                 </div>
-                <Link href="/workers" className="w-full cursor-pointer">
-                  <button className="w-full py-3 px-4 rounded-[2px] font-sans font-medium text-[14px] leading-5 text-center transition-all bg-[#001B40] text-white hover:bg-[#001B40]/90 active:scale-[0.98] cursor-pointer">
-                    Join as a Pro
-                  </button>
-                </Link>
               </div>
+              <Link href="/workers" className="w-full cursor-pointer">
+                <button className="w-full py-3 px-4 rounded-[2px] font-sans font-medium text-[14px] leading-5 text-center transition-all bg-[#001B40] text-white hover:bg-[#001B40]/90 active:scale-[0.98] cursor-pointer">
+                  Join as a Pro
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -180,8 +180,8 @@ export default function Home() {
               />
             </div>
             {/* Overlay Inset padding wrapper */}
-            <div className="px-4 pb-4 lg:px-6 lg:pb-6 flex-grow flex flex-col">
-              <div className="relative z-10 bg-white p-8 flex flex-col items-center text-center details-shadow -mt-8 lg:-mt-12 flex-grow justify-between gap-6 rounded-[4px] lg:rounded-none">
+            <div className="px-4 pb-4 lg:px-6 lg:pb-12 flex-grow flex flex-col gap-3">
+              <div className="relative z-10 bg-white pt-5 pb-8 px-8 flex flex-col items-center text-center details-shadow -mt-8 lg:-mt-12 flex-grow rounded-[4px] lg:rounded-none">
                 <div className="flex flex-col items-center">
                   <h3 className="font-poppins font-semibold lg:font-bold text-[24px] leading-[33.6px] lg:leading-[32px] text-[#191C1E] lg:text-[#121212]">
                     For Customers
@@ -190,12 +190,12 @@ export default function Home() {
                     Access thousands of verified pros for any home project, large or small.
                   </p>
                 </div>
-                <Link href="/customers" className="w-full cursor-pointer">
-                  <button className="w-full py-3 px-4 rounded-[2px] font-sans font-medium text-[14px] leading-5 text-center transition-all bg-[#1563E3] text-white hover:bg-[#1563E3]/90 active:scale-[0.98] cursor-pointer">
-                    Find a specialist
-                  </button>
-                </Link>
               </div>
+              <Link href="/customers" className="w-full cursor-pointer">
+                <button className="w-full py-3 px-4 rounded-[2px] font-sans font-medium text-[14px] leading-5 text-center transition-all bg-[#1563E3] text-white hover:bg-[#1563E3]/90 active:scale-[0.98] cursor-pointer">
+                  Find a specialist
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -210,8 +210,8 @@ export default function Home() {
               />
             </div>
             {/* Overlay Inset padding wrapper */}
-            <div className="px-4 pb-4 lg:px-6 lg:pb-6 flex-grow flex flex-col">
-              <div className="relative z-10 bg-white p-8 flex flex-col items-center text-center details-shadow -mt-8 lg:-mt-12 flex-grow justify-between gap-6 rounded-[4px] lg:rounded-none">
+            <div className="px-4 pb-4 lg:px-6 lg:pb-12 flex-grow flex flex-col gap-3">
+              <div className="relative z-10 bg-white pt-5 pb-8 px-8 flex flex-col items-center text-center details-shadow -mt-8 lg:-mt-12 flex-grow rounded-[4px] lg:rounded-none">
                 <div className="flex flex-col items-center">
                   <h3 className="font-poppins font-semibold lg:font-bold text-[24px] leading-[33.6px] lg:leading-[32px] text-[#191C1E] lg:text-[#121212]">
                     <span className="hidden lg:inline">For Talents</span>
@@ -222,12 +222,12 @@ export default function Home() {
                     <span className="inline lg:hidden">Start your career with apprenticeships under certified masters in your area.</span>
                   </p>
                 </div>
-                <Link href="/talents" className="w-full cursor-pointer">
-                  <button className="w-full py-3 px-4 rounded-[2px] font-sans font-medium text-[14px] leading-5 text-center transition-all bg-[#F9B72C] text-[#001B40] hover:bg-[#F9B72C]/90 active:scale-[0.98] cursor-pointer">
-                    Start learning
-                  </button>
-                </Link>
               </div>
+              <Link href="/talents" className="w-full cursor-pointer">
+                <button className="w-full py-3 px-4 rounded-[2px] font-sans font-medium text-[14px] leading-5 text-center transition-all bg-[#F9B72C] text-[#001B40] hover:bg-[#F9B72C]/90 active:scale-[0.98] cursor-pointer">
+                  Start Learning
+                </button>
+              </Link>
             </div>
           </div>
         </div>
