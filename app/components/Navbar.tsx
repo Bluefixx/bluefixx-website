@@ -41,7 +41,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav Links */}
-        <div className="hidden md:flex items-center gap-4 lg:gap-8">
+        <div className="hidden lg:flex items-center gap-4 lg:gap-8">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -60,7 +60,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Action Buttons */}
-        <div className="hidden md:flex items-center gap-2 lg:gap-4">
+        <div className="hidden lg:flex items-center gap-2 lg:gap-4">
           <Link href="/signin">
             <Button variant="outlined" size="large">
               Sign in
@@ -89,7 +89,7 @@ export default function Navbar() {
         {/* Mobile Hamburger Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-2 text-primary-900 focus:outline-none"
+          className="lg:hidden p-2 text-primary-900 focus:outline-none"
           aria-label="Toggle menu"
         >
           {isOpen ? (
@@ -108,7 +108,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="absolute top-[80px] left-0 w-full bg-white border-b border-neutral-300 md:hidden flex flex-col px-6 py-8 gap-6 shadow-lg animate-in fade-in slide-in-from-top-5 duration-200">
+        <div className="absolute top-[80px] left-0 w-full bg-white border-b border-neutral-300 lg:hidden flex flex-col px-6 py-8 gap-6 shadow-lg animate-in fade-in slide-in-from-top-5 duration-200">
           <div className="flex flex-col gap-5">
             {mobileNavLinks.map((link) => (
               <Link

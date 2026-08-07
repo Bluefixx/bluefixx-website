@@ -237,3 +237,12 @@ body {
   letter-spacing: 0;
 }
 
+/* Custom Shadows */
+.card-shadow-mobile {
+  box-shadow: 0px 4px 20px 0px rgba(15, 23, 42, 0.05);
+}
+
+.details-shadow {
+  box-shadow: 0px 16px 40px -8px rgba(88, 92, 95, 0.16);
+}
+
