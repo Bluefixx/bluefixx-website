@@ -5,6 +5,8 @@ import Offers from "./components/Offers";
 import Excellence from "./components/Excellence";
 import WhyChoose from "./components/WhyChoose";
 import Testimonials from "./components/Testimonials";
+import FAQ from "./components/FAQ";
+import GetStarted from "./components/GetStarted";
 
 export default function Home() {
   return (
@@ -74,6 +76,12 @@ export default function Home() {
 
       {/* Testimonials Section */}
       <Testimonials />
+
+      {/* FAQ Section */}
+      <FAQ />
+
+      {/* Get Started Section */}
+      <GetStarted />
     </div>
   );
 }

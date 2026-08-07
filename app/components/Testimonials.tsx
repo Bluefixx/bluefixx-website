@@ -47,7 +47,8 @@ export default function Testimonials() {
   }, [nextTestimonial]);
 
   return (
-    <section className="w-full bg-white py-[64px] md:py-[96px] px-6 lg:px-[64px]">
+    <section className="w-full bg-white md:bg-white py-[64px] md:py-[96px] px-6 lg:px-[64px] relative">
+      <div className="md:hidden absolute inset-0 bg-[#F7F9FB] -z-10" />
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 md:mb-16">
@@ -56,7 +57,7 @@ export default function Testimonials() {
               Don't just take our word for it.
             </h2>
             <p className="font-montserrat font-normal text-[16px] leading-[24px] tracking-[0px] text-[#45464D] md:text-[#4C4546]">
-              Thousands of successful jobs completed every month across the country.
+              Thousands of successful jobs completed every month across the <br className="hidden lg:block" /> country.
             </p>
           </div>
 
@@ -80,7 +81,7 @@ export default function Testimonials() {
         </div>
 
         {/* Desktop View (Grid) */}
-        <div className="hidden md:grid md:grid-cols-3 gap-6 lg:gap-8">
+        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {testimonials.map((testimonial) => (
             <TestimonialCard key={testimonial.id} testimonial={testimonial} isMobile={false} />
           ))}
