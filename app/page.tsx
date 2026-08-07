@@ -4,6 +4,7 @@ import Partners from "./components/Partners";
 import Offers from "./components/Offers";
 import Excellence from "./components/Excellence";
 import WhyChoose from "./components/WhyChoose";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
@@ -70,6 +71,9 @@ export default function Home() {
 
       {/* Why Choose Section */}
       <WhyChoose />
+
+      {/* Testimonials Section */}
+      <Testimonials />
     </div>
   );
 }
