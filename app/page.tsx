@@ -65,7 +65,7 @@ export default function Home() {
         {/* Sliding Track container */}
         <div className="relative w-full overflow-hidden flex">
           {/* Inner track (duplicating list of partners 6 times to fill screen and scroll seamlessly) */}
-          <div className="flex gap-16 md:gap-24 animate-scroll whitespace-nowrap min-w-full items-center justify-around">
+          <div className="flex gap-16 md:gap-24 animate-scroll whitespace-nowrap items-center">
             {[...Array(6)].flatMap((_, i) => [
               <div key={`p1-${i}`} className="flex-shrink-0 flex items-center justify-center">
                 <Image
@@ -73,7 +73,7 @@ export default function Home() {
                   alt="Nexora"
                   width={140}
                   height={40}
-                  className="h-7 md:h-9 w-auto object-contain grayscale opacity-60 hover:opacity-100 transition-opacity"
+                  className="h-7 md:h-9 w-auto object-contain"
                 />
               </div>,
               <div key={`p2-${i}`} className="flex-shrink-0 flex items-center justify-center">
@@ -82,7 +82,7 @@ export default function Home() {
                   alt="Africell"
                   width={140}
                   height={40}
-                  className="h-7 md:h-9 w-auto object-contain grayscale opacity-60 hover:opacity-100 transition-opacity"
+                  className="h-7 md:h-9 w-auto object-contain"
                 />
               </div>,
               <div key={`p3-${i}`} className="flex-shrink-0 flex items-center justify-center">
@@ -91,7 +91,7 @@ export default function Home() {
                   alt="Mavora"
                   width={140}
                   height={40}
-                  className="h-7 md:h-9 w-auto object-contain grayscale opacity-60 hover:opacity-100 transition-opacity"
+                  className="h-7 md:h-9 w-auto object-contain"
                 />
               </div>
             ])}
