@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "BlueFixx | Trusted hands for every job",
     description: "BlueFixx connects verified professionals, eager customers, and the next generation of apprentices in one unified marketplace.",
-    url: "https://bluefixx.]]]].com",
+    url: "https://bluefixx.llp.com",
     siteName: "BlueFixx",
     images: [
       {
