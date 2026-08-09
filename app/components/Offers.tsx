@@ -41,7 +41,7 @@ const offerCards = [
 export default function Offers() {
   return (
     <section className="w-full bg-[#FFFFFF] py-[80px] px-6 lg:px-[64px]">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-[32px]">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-[32px]">
         {offerCards.map((card, index) => (
           <div key={index} className={`flex flex-col bg-[#FAFAFA] overflow-hidden transition-all h-full border-b-[12px] ${card.borderColor} ${index === 0 || index === 2 ? 'max-lg:border-b-0' : ''} rounded-[12px] lg:rounded-none card-shadow-mobile lg:shadow-none`}>
             <div className="relative w-full aspect-[4/3] md:aspect-[3/2] z-0">

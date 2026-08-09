@@ -8,7 +8,7 @@ export default function WorkersPage() {
     <div className="w-full flex flex-col bg-white">
       {/* Hero Section */}
       <section className="w-full py-[48px] px-6 md:px-6 lg:px-[64px]">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: Content */}
           <div className="flex flex-col gap-6 md:gap-8">
             <h1 className="font-poppins font-semibold text-[40px] md:text-[48px] leading-[50px] md:leading-[58px] text-black">
@@ -43,7 +43,7 @@ export default function WorkersPage() {
 
       {/* Benefits Section */}
       <section className="w-full py-[64px] md:py-[96px] px-6 md:px-6 lg:px-[64px] bg-[#F2F4F6] md:bg-white">
-        <div className="max-w-7xl mx-auto flex flex-col items-center">
+        <div className="max-w-6xl mx-auto flex flex-col items-center">
           <div className="flex flex-col items-center gap-2 mb-12 md:mb-16">
             <h2 className="font-poppins font-semibold text-[24px] leading-[24px] text-[#121212] text-center">
               Built for Professionals
@@ -118,7 +118,7 @@ export default function WorkersPage() {
                 <h3 className="font-poppins font-semibold text-[16px] leading-[24px] text-white">
                   Secure Payments
                 </h3>
-                <p className="font-montserrat font-normal text-[16px] leading-[24px] text-[#E5E5E5]">
+                <p className="font-montserrat font-normal text-[16px] leading-[24px] text-[#E5E5E5] md:w-1/2">
                   Get paid on time, every time. Our automated escrow system protects your hard-earned wages.
                 </p>
               </div>

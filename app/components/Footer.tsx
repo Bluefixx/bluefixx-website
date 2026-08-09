@@ -37,7 +37,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-white border-t border-[#C4C5DA] font-sans pt-12 md:pt-16 pb-8">
       {/* Top section: logo/intro and link columns */}
-      <div className="mx-auto px-6 lg:px-[64px] flex flex-col lg:flex-row justify-between gap-12 lg:gap-8 pb-12">
+      <div className="max-w-7xl mx-auto px-6 lg:px-[64px] flex flex-col lg:flex-row justify-between gap-12 lg:gap-8 pb-12">
 
         {/* Brand Column */}
         <div className="flex flex-col gap-6 max-w-sm">

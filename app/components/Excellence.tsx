@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Excellence() {
   return (
     <section className="w-full bg-[#ECEEF0] md:bg-[#F2F2F2] py-[64px] md:py-[96px] px-6 lg:px-[64px]">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         {/* Left: Staggered Image Placeholders */}
         <div className="relative flex flex-col items-center lg:items-start">
           <div className="grid grid-cols-2 gap-4 md:gap-6 w-full max-w-[500px] lg:max-w-none">

@@ -49,7 +49,7 @@ export default function Testimonials() {
   return (
     <section className="w-full bg-white md:bg-white py-[64px] md:py-[96px] px-6 lg:px-[64px] relative">
       <div className="md:hidden absolute inset-0 bg-[#F7F9FB] -z-10" />
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 md:mb-16">
           <div className="flex flex-col gap-3 md:gap-4 max-w-2xl">

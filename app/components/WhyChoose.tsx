@@ -55,7 +55,7 @@ export default function WhyChoose() {
         <Image src="/images/curl-bottom-mobile.svg" alt="" width={120} height={120} />
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
         <h2 className="font-poppins font-semibold md:font-bold text-[24px] md:text-[30px] leading-[31.2px] md:leading-[36px] tracking-[0px] text-[#191C1E] md:text-black text-center mb-12 md:mb-16">
           Why choose BlueFixx?
         </h2>
