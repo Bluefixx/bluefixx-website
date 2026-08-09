@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
@@ -17,6 +17,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bluefixxllp.com"),
   title: "BlueFixx | Trusted hands for every job",
   description: "BlueFixx connects verified professionals, eager customers, and the next generation of apprentices in one unified marketplace. Find reliable home services today.",
   keywords: ["home services", "verified professionals", "handyman", "plumber", "electrician", "apprenticeships", "Africa", "BlueFixx"],
@@ -46,10 +47,14 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  viewport: "width=device-width, initial-scale=1",
   icons: {
     icon: "/favicon.ico",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
