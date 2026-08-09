@@ -31,7 +31,7 @@ export default function Button({
   // Variants as specified by the user
   const variantClasses = {
     solid: "bg-primary-900 text-white hover:bg-primary-800 border border-transparent disabled:bg-primary-200",
-    outlined: "bg-transparent text-primary-900 border-[1.5px] border-primary-900 hover:bg-primary-100 disabled:border-primary-200 disabled:text-primary-200",
+    outlined: "bg-transparent text-primary-900 border-[2px] border-primary-900 hover:bg-primary-100 disabled:border-primary-200 disabled:text-primary-200",
     white: "bg-white !text-black hover:bg-white/90 border border-transparent",
   };
 
