@@ -16,7 +16,7 @@ export default function WorkerCTA() {
             </p>
           </div>
           <Link href="/signup">
-            <Button variant="solid" size="large" className="bg-white text-[#001B40] hover:bg-white/90">
+            <Button variant="white" size="large" className="!text-[#001B40] w-full md:w-auto">
               Get Started Today
             </Button>
           </Link>
