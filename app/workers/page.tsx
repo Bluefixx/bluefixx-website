@@ -2,6 +2,8 @@ import React from "react";
 import WorkerHero from "../components/workers/WorkerHero";
 import WorkerBenefits from "../components/workers/WorkerBenefits";
 import MembershipPath from "../components/workers/MembershipPath";
+import WorkerTestimonials from "../components/workers/WorkerTestimonials";
+import WorkerCTA from "../components/workers/WorkerCTA";
 
 export default function WorkersPage() {
   return (
@@ -9,6 +11,8 @@ export default function WorkersPage() {
       <WorkerHero />
       <WorkerBenefits />
       <MembershipPath />
+      <WorkerTestimonials />
+      <WorkerCTA />
     </div>
   );
 }

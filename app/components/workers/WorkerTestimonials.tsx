@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import ReusableTestimonials, { TestimonialData } from "./ReusableTestimonials";
+import ReusableTestimonials, { TestimonialData } from "../ReusableTestimonials";
 
-const testimonials: TestimonialData[] = [
+const workerTestimonials: TestimonialData[] = [
   {
     id: 1,
     name: "David S.",
@@ -30,13 +30,15 @@ const testimonials: TestimonialData[] = [
   },
 ];
 
-export default function Testimonials() {
+export default function WorkerTestimonials() {
   return (
     <ReusableTestimonials
-      testimonials={testimonials}
-      heading="Don't just take our word for it."
-      subheading="Thousands of successful jobs completed every month across the country."
+      testimonials={workerTestimonials}
+      heading="Voice of the Fixxers"
+      subheading="Join 5,000+ tradespeople growing their business."
+      mobileBgColor="bg-[#ECEEF0]"
+      headingStyles="font-poppins font-normal md:font-semibold text-[16px] leading-[25.6px] md:leading-[24px] tracking-[0px] text-black"
+      subheadingStyles="font-montserrat font-normal text-[16px] leading-[25.6px] md:leading-[24px] tracking-[0px] text-[#45464D] md:text-[#4C4546]"
     />
   );
 }
-
