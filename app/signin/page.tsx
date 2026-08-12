@@ -31,7 +31,7 @@ export default function SignInPage() {
           {/* Divider after heading (Desktop only) */}
 
           {/* Form Section */}
-          <form className="flex flex-col mt-6 md:mt-0" onSubmit={(e) => e.preventDefault()}>
+          <form className="flex flex-col mt-6 md:mt-6" onSubmit={(e) => e.preventDefault()}>
             <label
               htmlFor="email"
               className="block font-montserrat font-semibold md:font-normal text-[14px] md:text-[16px] leading-[14px] md:leading-[24px] tracking-[0.28px] md:tracking-[0px] text-[#45464D] md:text-[#434655] mb-2"
