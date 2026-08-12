@@ -21,13 +21,11 @@ export default function SignUpPage() {
             <h1 className="font-poppins font-semibold text-[24px] leading-[31.2px] md:leading-[28px] tracking-[0px] text-[#191C1E] md:text-[#131B2E]">
               Create your account
             </h1>
-            <p className="font-montserrat font-normal text-[16px] leading-[25.6px] md:leading-[24px] tracking-[0px] text-[#45464D] md:text-[#434655] mt-4 md:mt-3">
+            <div className="border-b border-[#D4D4D4] mt-[8px] mb-[8px] hidden md:block" />
+            <p className="font-montserrat font-normal text-[16px] leading-[25.6px] md:leading-[24px] tracking-[0px] text-[#45464D] md:text-[#434655] mt-4 md:mt-0">
               Build, hire, or grow with Africa's skilled workforce.
             </p>
           </div>
-
-          {/* Divider after heading (Desktop only) */}
-          <div className="border-b border-[#D4D4D4] my-6 hidden md:block" />
 
           {/* Form Section */}
           <form className="flex flex-col mt-6 md:mt-0" onSubmit={(e) => e.preventDefault()}>
@@ -89,11 +87,8 @@ export default function SignUpPage() {
             </Link>
           </div>
 
-          {/* Divider above badges (Both mobile and desktop) */}
-          <div className="border-b border-[#C3C6D74D] my-6" />
-
           {/* Badges Footer Section */}
-          <div className="flex items-center justify-center gap-8 md:gap-[32px]">
+          <div className="flex items-center justify-center gap-8 md:gap-[32px] mt-6">
             {/* Enterprise Secure Badge - Desktop */}
             <div className="hidden md:flex items-center gap-2">
               <Image
