@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function CustomerGetStarted() {
   return (
-    <section className="relative w-full py-[80px] md:py-[120px] px-4 md:px-6 lg:px-[64px] min-h-[420px] md:min-h-[480px] flex items-center justify-center overflow-hidden">
+    <section className="relative w-full py-[80px] md:py-[120px] px-4 md:px-6 lg:px-[64px] min-h-[420px] md:min-h-[520px] xl:min-h-[600px] [@media(min-width:1441px)]:min-h-[700px] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-[url('/images/getstarted-cust.png')] bg-cover bg-center bg-no-repeat"
@@ -20,7 +20,7 @@ export default function CustomerGetStarted() {
         </h2>
         
         <p className="font-montserrat font-normal text-[16px] leading-[25.6px] md:leading-[24px] tracking-[0px] text-[#E0E3E5] md:text-[#F5F5F5] mb-8 md:mb-10 max-w-[280px] md:max-w-2xl">
-          Join thousands of happy customers who trust BlueFixx for their home and business needs.
+          Join thousands of happy customers who trust <br className="hidden md:block" /> BlueFixx for their home and business needs.
         </p>
 
         <Link href="/post-job">
