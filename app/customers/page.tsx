@@ -3,8 +3,7 @@ import CustomerHero from "../components/customers/CustomerHero";
 import WhyChooseCustomers from "../components/customers/WhyChooseCustomers";
 import HowItWorks from "../components/customers/HowItWorks";
 import SuccessStories from "../components/customers/SuccessStories";
-import Testimonials from "../components/Testimonials";
-import GetStarted from "../components/GetStarted";
+import CustomerGetStarted from "../components/customers/CustomerGetStarted";
 
 export default function CustomersPage() {
   return (
@@ -13,8 +12,7 @@ export default function CustomersPage() {
       <WhyChooseCustomers />
       <HowItWorks />
       <SuccessStories />
-      <Testimonials />
-      <GetStarted />
+      <CustomerGetStarted />
     </div>
   );
 }

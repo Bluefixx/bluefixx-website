@@ -43,14 +43,14 @@ export default function HowItWorks() {
                 <div 
                   className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full flex items-center justify-center mb-6 shadow-lg transition-transform group-hover:scale-105"
                   style={{
-                    background: "radial-gradient(circle at center, #00D2FF 0%, #001B40 70%, #001B40 100%)", // Desktop: blends at 70%
+                    background: "radial-gradient(circle at 50% 0%, #00D2FF 0%, #001B40 80%, #001B40 100%)",
                     backgroundImage: "var(--circle-bg)"
                   }}
                 >
                   {/* CSS Variables for responsive gradients */}
                   <style jsx>{`
                     div {
-                      --circle-bg: radial-gradient(circle at center, #00D2FF 0%, #001B40 70%, #001B40 100%);
+                      --circle-bg: radial-gradient(circle at 50% 0%, #00D2FF 0%, #001B40 80%, #001B40 100%);
                     }
                     @media (max-width: 768px) {
                       div {
@@ -76,7 +76,7 @@ export default function HowItWorks() {
 
               {/* Mobile Connector Line (1px, between steps) */}
               {index < steps.length - 1 && (
-                <div className="md:hidden w-[1px] h-[48px] bg-[#CFC4C5] -my-6 relative z-0" />
+                <div className="md:hidden w-[1px] h-[80px] bg-[#CFC4C5] -mt-10 -mb-12 relative z-0" />
               )}
             </React.Fragment>
           ))}
