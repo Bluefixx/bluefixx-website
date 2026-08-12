@@ -29,12 +29,11 @@ export default function SignInPage() {
       )}
 
       {/* Main Form Card */}
-      <div className={`relative z-10 w-full max-w-[500px] rounded-[12px] md:rounded-[32px] p-[32px] md:p-[56px] border-none md:border md:border-[#C3C6D74D] shadow-[0px_4px_20px_0px_rgba(15,23,42,0.05)] md:shadow-[0px_16px_40px_-8px_rgba(88,92,95,0.16)] overflow-hidden transition-all duration-300 ${
-        isSubmitted 
-          ? "bg-white/40 backdrop-blur-md md:bg-white md:backdrop-blur-none" 
-          : "bg-white"
-      }`}>
-        
+      <div className={`relative z-10 w-full max-w-[500px] rounded-[12px] md:rounded-[32px] p-[32px] md:p-[56px] border-none md:border md:border-[#C3C6D74D] shadow-[0px_4px_20px_0px_rgba(15,23,42,0.05)] md:shadow-[0px_16px_40px_-8px_rgba(88,92,95,0.16)] overflow-hidden transition-all duration-300 ${isSubmitted
+        ? "bg-white/80 backdrop-blur-sm md:bg-white md:backdrop-blur-none"
+        : "bg-white"
+        }`}>
+
         {/* Top-right bubble shape on desktop only */}
         <div className="hidden md:block absolute -top-[80px] -right-[80px] w-[240px] h-[240px] bg-[#004AC60D] rounded-full pointer-events-none z-0" />
 
@@ -180,8 +179,8 @@ export default function SignInPage() {
 
               {/* Form Section */}
               <form className="flex flex-col mt-6 md:mt-6" onSubmit={handleSubmit}>
-                <label 
-                  htmlFor="email" 
+                <label
+                  htmlFor="email"
                   className="block font-montserrat font-semibold md:font-normal text-[14px] md:text-[16px] leading-[14px] md:leading-[24px] tracking-[0.28px] md:tracking-[0px] text-[#45464D] md:text-[#434655] mb-2"
                 >
                   Email
