@@ -7,32 +7,33 @@ const masterySteps = [
     title: "Application & Matching",
     description: "Submit your credentials and get matched with a master tradesperson in your area who fits your career goals.",
     image: "/images/path1.png",
-    gradient: "from-[#001B4000] to-[#000A19]",
-    mobileGradient: "from-[#000000E5] via-[#00000066] to-[#00000000]",
+    // dark at bottom (from-), fading to transparent at top (to-)
+    gradientClasses:
+      "from-[#000000E5] via-[#00000066] to-transparent lg:from-[#000A19] lg:via-transparent lg:to-[#001B4000]",
   },
   {
     step: "STEP 02",
     title: "Foundational Training",
     description: "First 6 months focused on safety, tool mastery, and core concepts.",
     image: "/images/path2.png",
-    gradient: "from-[#00000000] to-[#000000]",
-    mobileGradient: "from-[#000000E5] via-[#00000066] to-[#00000000]",
+    gradientClasses:
+      "from-[#000000E5] via-[#00000066] to-transparent lg:from-black lg:via-transparent lg:to-transparent",
   },
   {
     step: "STEP 03",
     title: "Field Work",
     description: "Last 6 months focused on hands-on experience.",
     image: "/images/path3.png",
-    gradient: "from-[#00000000] to-[#010B19]",
-    mobileGradient: "from-[#000000E5] via-[#00000066] to-[#00000000]",
+    gradientClasses:
+      "from-[#000000E5] via-[#00000066] to-transparent lg:from-[#010B19] lg:via-transparent lg:to-transparent",
   },
   {
     step: "STEP 03",
     title: "Certification",
     description: "Get certified.",
     image: "/images/path4.png",
-    gradient: "from-[#00000000] to-[#010B19]",
-    mobileGradient: "from-[#000000E5] via-[#00000066] to-[#00000000]",
+    gradientClasses:
+      "from-[#000000E5] via-[#00000066] to-transparent lg:from-[#010B19] lg:via-transparent lg:to-transparent",
   },
 ];
 
@@ -50,21 +51,21 @@ export default function PathToMastery() {
           </p>
         </div>
 
-        {/* Complex Grid Desktop / Stacked Mobile */}
-        <div className="w-full flex flex-col gap-6 md:grid md:grid-cols-2 md:gap-8">
-          
+        {/* Complex Grid Desktop / Stacked Mobile + Tablet */}
+        <div className="w-full flex flex-col gap-6 lg:grid lg:grid-cols-2 lg:gap-8">
+
           {/* Column 1: Step 1 (Full Height on Desktop) */}
           <div className="h-full">
             <MasteryCard step={masterySteps[0]} isMain={true} />
           </div>
 
           {/* Column 2: Steps 2, 3, 4 */}
-          <div className="flex flex-col gap-6 md:gap-8">
+          <div className="flex flex-col gap-6 lg:gap-8">
             {/* Step 2 (Full Width of Column) */}
             <MasteryCard step={masterySteps[1]} />
-            
-            {/* Row with Step 3 & 4 (50-50 on Desktop) */}
-            <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+
+            {/* Row with Step 3 & 4 (50-50 on Desktop only) */}
+            <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
               <div className="flex-1">
                 <MasteryCard step={masterySteps[2]} />
               </div>
@@ -89,31 +90,34 @@ export default function PathToMastery() {
 
 function MasteryCard({ step, isMain = false }: { step: typeof masterySteps[0]; isMain?: boolean }) {
   return (
-    <div className={`relative w-full rounded-[12px] md:rounded-[4px] overflow-hidden ${isMain ? 'md:bg-[#001B40] md:border md:border-[#D1D1D1] md:p-8' : ''} group h-full`}>
-      <div className={`relative aspect-square md:aspect-auto w-full h-full ${isMain ? 'border md:border-[#D1D1D1]' : ''} overflow-hidden rounded-[12px] md:rounded-none min-h-[300px]`}>
+    <div
+      className={`relative w-full rounded-[12px] lg:rounded-[4px] overflow-hidden ${
+        isMain ? "lg:bg-[#001B40] lg:border lg:border-[#D1D1D1] lg:p-8" : ""
+      } group h-full`}
+    >
+      <div
+        className={`relative aspect-square lg:aspect-auto w-full h-full ${
+          isMain ? "border lg:border-[#D1D1D1]" : ""
+        } overflow-hidden rounded-[12px] lg:rounded-none min-h-[300px]`}
+      >
         {/* Background Image */}
-        <Image 
-          src={step.image} 
-          alt={step.title}
-          fill
-          className="object-cover"
-        />
-        
-        {/* Mobile Top Overlay (Tint) */}
-        <div className="md:hidden absolute inset-0 bg-[#131B2E]/30 z-5" />
+        <Image src={step.image} alt={step.title} fill className="object-cover" />
 
-        {/* Gradients */}
-        <div className={`absolute inset-0 bg-gradient-to-t ${step.mobileGradient} md:bg-gradient-to-t ${step.gradient} z-10`} />
+        {/* Top Tint (mobile + tablet only) */}
+        <div className="lg:hidden absolute inset-0 bg-[#131B2E]/30 z-[5]" />
+
+        {/* Bottom Gradient — dark at bottom (from-), fading to transparent at top (to-) */}
+        <div className={`absolute inset-0 bg-gradient-to-t ${step.gradientClasses} z-10`} />
 
         {/* Content Overlay */}
-        <div className="absolute inset-0 z-20 flex flex-col justify-end p-6 md:p-8">
-          <span className="font-montserrat font-normal text-[16px] leading-[24px] tracking-[1.6px] md:tracking-[0px] text-[#ADC6FF] md:text-[#E5E5E5] mb-1">
+        <div className="absolute inset-0 z-20 flex flex-col justify-end p-6 lg:p-8">
+          <span className="font-montserrat font-normal text-[16px] leading-[24px] tracking-[1.6px] lg:tracking-[0px] text-[#ADC6FF] lg:text-[#E5E5E5] mb-1">
             {step.step}
           </span>
-          <h3 className="font-poppins font-semibold text-[16px] md:text-[20px] leading-[24px] md:leading-[28px] tracking-[0px] text-white md:text-[#FAFAFA] mb-2">
+          <h3 className="font-poppins font-semibold text-[16px] lg:text-[20px] leading-[24px] lg:leading-[28px] tracking-[0px] text-white lg:text-[#FAFAFA] mb-2">
             {step.title}
           </h3>
-          <p className="font-montserrat font-normal text-[16px] leading-[24px] tracking-[0px] text-white md:text-[#E5E5E5] opacity-80 md:opacity-100">
+          <p className="font-montserrat font-normal text-[16px] leading-[24px] tracking-[0px] text-white lg:text-[#E5E5E5] opacity-80 lg:opacity-100">
             {step.description}
           </p>
         </div>

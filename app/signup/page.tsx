@@ -1,17 +1,16 @@
-"use client"
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function SignInPage() {
+export default function SignUpPage() {
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-[url('/images/hero.png')] bg-cover bg-center bg-no-repeat px-4 py-8 md:p-6 relative">
-      {/* Semi-transparent dark overlay */}
+      {/* Semi-transparent dark overlay to match hero aesthetics if needed, but keeping it light if bg is clear */}
       <div className="absolute inset-0 bg-[#000D1D]/20 pointer-events-none" />
 
       {/* Main Form Card */}
       <div className="relative z-10 w-full max-w-[500px] bg-white rounded-[12px] md:rounded-[32px] p-[32px] md:p-[56px] border-none md:border md:border-[#C3C6D74D] shadow-[0px_4px_20px_0px_rgba(15,23,42,0.05)] md:shadow-[0px_16px_40px_-8px_rgba(88,92,95,0.16)] overflow-hidden">
-
+        
         {/* Top-right bubble shape on desktop only */}
         <div className="hidden md:block absolute -top-[80px] -right-[80px] w-[240px] h-[240px] bg-[#004AC60D] rounded-full pointer-events-none z-0" />
 
@@ -22,18 +21,18 @@ export default function SignInPage() {
             <h1 className="font-poppins font-semibold text-[24px] leading-[31.2px] md:leading-[28px] tracking-[0px] text-[#191C1E] md:text-[#131B2E]">
               Create your account
             </h1>
-            <div className="border-b border-[#D4D4D4] my-6 hidden md:block" />
             <p className="font-montserrat font-normal text-[16px] leading-[25.6px] md:leading-[24px] tracking-[0px] text-[#45464D] md:text-[#434655] mt-4 md:mt-3">
               Build, hire, or grow with Africa's skilled workforce.
             </p>
           </div>
 
           {/* Divider after heading (Desktop only) */}
+          <div className="border-b border-[#D4D4D4] my-6 hidden md:block" />
 
           {/* Form Section */}
           <form className="flex flex-col mt-6 md:mt-0" onSubmit={(e) => e.preventDefault()}>
-            <label
-              htmlFor="email"
+            <label 
+              htmlFor="email" 
               className="block font-montserrat font-semibold md:font-normal text-[14px] md:text-[16px] leading-[14px] md:leading-[24px] tracking-[0.28px] md:tracking-[0px] text-[#45464D] md:text-[#434655] mb-2"
             >
               Email
@@ -77,13 +76,13 @@ export default function SignInPage() {
           {/* Divider right after button (Desktop only) */}
           <div className="border-b border-[#C3C6D74D] my-6 hidden md:block" />
 
-          {/* Sign Up Row */}
+          {/* Log In Row */}
           <div className="text-center mt-6 md:mt-0">
             <span className="font-montserrat font-normal text-[16px] leading-[25.6px] md:leading-[24px] tracking-[0px] text-[#45464D] md:text-[#434655]">
               Already part of Bluefixx?{" "}
             </span>
             <Link
-              href="/signup"
+              href="/signin"
               className="font-montserrat font-semibold md:font-bold text-[16px] leading-[25.6px] md:leading-[24px] tracking-[0px] text-[#001B40] hover:underline"
             >
               Log in

@@ -66,7 +66,7 @@ export default function Navbar() {
               Sign in
             </Button>
           </Link>
-          <Link href="/download">
+          <Link href="/signup">
             <Button
               variant="solid"
               size="large"
@@ -123,7 +123,7 @@ export default function Navbar() {
           </div>
 
           <div className="mt-4">
-            <Link href="/signin" onClick={() => setIsOpen(false)} className="w-full">
+            <Link href="/signup" onClick={() => setIsOpen(false)} className="w-full">
               <Button variant="solid" size="giant" className="w-full">
                 Sign Up
               </Button>

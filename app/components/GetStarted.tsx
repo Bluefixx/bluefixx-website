@@ -24,7 +24,7 @@ export default function GetStarted() {
               Create Account
             </Button>
           </Link>
-          <Link href="/download" className="w-full md:w-auto">
+          <Link href="/signup" className="w-full md:w-auto">
             <Button
               variant="outlined"
               size="large"
