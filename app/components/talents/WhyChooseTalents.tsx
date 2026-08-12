@@ -55,7 +55,13 @@ export default function WhyChooseTalents() {
               <h3 className="font-poppins font-semibold text-[16px] md:text-[20px] leading-[24px] md:leading-[28px] tracking-[0px] text-white">
                 {reason.title}
               </h3>
-              <p className="font-montserrat font-normal text-[16px] leading-[24px] tracking-[0px] text-[#7C839B] md:text-[#E5E5E5]">
+              <p 
+                className={`font-montserrat font-normal text-[16px] leading-[24px] tracking-[0px] ${
+                  index === 1 ? 'text-[#FEFCFF] md:text-[#E5E5E5]' : 
+                  index === 2 ? 'text-[#FFFFFF] md:text-[#E5E5E5]' : 
+                  'text-[#7C839B] md:text-[#E5E5E5]'
+                }`}
+              >
                 {reason.description}
               </p>
             </div>
