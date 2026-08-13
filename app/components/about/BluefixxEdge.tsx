@@ -6,19 +6,22 @@ const reasons = [
     icon: "/icons/quality.svg",
     bgColor: "bg-[#001B40]",
     title: "Guaranteed Quality",
-    description: "If you're not satisfied with the work, we'll make it right. Every project booked through us is protected by the BlueFixx Guarantee."
+    description: "If you're not satisfied with the work, we'll make it right. Every project booked through us is protected by the BlueFixx Guarantee.",
+    iconSize: 20
   },
   {
     icon: "/icons/secure.svg",
     bgColor: "bg-[#1563E3]",
     title: "Transparent Pricing",
-    description: "No hidden fees or unexpected costs. You'll get detailed quotes upfront so you can make informed decisions for your home."
+    description: "No hidden fees or unexpected costs. You'll get detailed quotes upfront so you can make informed decisions for your home.",
+    iconSize: 24
   },
   {
     icon: "/icons/efficient.svg",
     bgColor: "bg-[#F9B72C]",
     title: "Efficient Matching",
-    description: "Our smart algorithm finds the best professional for your specific needs, location, and budget in minutes, not days."
+    description: "Our smart algorithm finds the best professional for your specific needs, location, and budget in minutes, not days.",
+    iconSize: 24
   }
 ];
 
@@ -82,8 +85,8 @@ export default function BluefixxEdge() {
                   <Image
                     src={reason.icon}
                     alt={reason.title}
-                    width={24}
-                    height={24}
+                    width={reason.iconSize}
+                    height={reason.iconSize}
                   />
                 </div>
                 {/* Text Area */}
