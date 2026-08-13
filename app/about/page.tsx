@@ -4,9 +4,9 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <div className="w-full flex flex-col bg-white">
-      
+
       {/* Hero Section */}
-      <section 
+      <section
         className="relative w-full min-h-[480px] md:min-h-[580px] flex items-center justify-start px-6 md:px-12 lg:px-[64px] py-20"
         style={{
           backgroundImage: "url('/images/hero.png')",
@@ -16,7 +16,7 @@ export default function AboutPage() {
         }}
       >
         {/* Dark Blue to Black Gradient Overlay */}
-        <div 
+        <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background: "linear-gradient(to bottom, #001B3DB2, #000000E5)"
@@ -80,16 +80,16 @@ export default function AboutPage() {
 
         {/* Alternating Row Grid */}
         <div className="w-full max-w-7xl flex flex-col gap-8">
-          
+
           {/* Row 1: Mission (70%) and Vision (30%) */}
           <div className="flex flex-col lg:flex-row gap-8">
-            
+
             {/* Card 1: Our Mission */}
             <div className="w-full lg:w-[70%] bg-white rounded-[12px] p-8 border border-[#C4C6CF4D] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.01)] flex flex-col justify-between">
               <div>
                 {/* Icon Container */}
                 <div className="w-12 h-12 rounded-[8px] bg-[#001B40] flex items-center justify-center mb-6">
-                  <Image 
+                  <Image
                     src="/icons/flag.svg"
                     alt="Flag icon"
                     width={24}
@@ -123,7 +123,7 @@ export default function AboutPage() {
             <div className="w-full lg:w-[30%] bg-[#0051D5] rounded-[12px] p-8 shadow-[0px_4px_20px_0px_rgba(0,0,0,0.01)] flex flex-col text-white">
               {/* Icon Container */}
               <div className="w-12 h-12 rounded-[8px] bg-[#D8E9FF] flex items-center justify-center mb-6">
-                <Image 
+                <Image
                   src="/icons/eyes.svg"
                   alt="Eyes icon"
                   width={24}
@@ -162,7 +162,7 @@ export default function AboutPage() {
 
           {/* Row 2: Reliability First (30%) and Community Impact (70%) */}
           <div className="flex flex-col lg:flex-row gap-8">
-            
+
             {/* Card 1: Reliability First */}
             <div className="w-full lg:w-[30%] bg-[#F2F4F6] rounded-[12px] p-8 border border-[#C4C6CF4D] flex flex-col">
               {/* Heading */}
@@ -192,7 +192,7 @@ export default function AboutPage() {
               </div>
 
               {/* Stats Area */}
-              <div className="flex flex-row items-center gap-8 pl-0 lg:pl-8 border-t lg:border-t-0 lg:border-l border-[#C4C6CF80] pt-6 lg:pt-0 w-full lg:w-auto justify-start lg:justify-center">
+              <div className="flex flex-row items-center gap-8 pl-0 lg:pl-8 border-t lg:border-t-0 lg:border-none border-[#C4C6CF80] pt-6 lg:pt-0 w-full lg:w-auto justify-start lg:justify-center">
                 {/* Stat 1 */}
                 <div className="flex flex-col">
                   <span className="font-poppins font-semibold text-[32px] leading-[38px] tracking-[0px] text-[#191C1E] text-left">
