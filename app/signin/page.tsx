@@ -132,7 +132,7 @@ export default function SignInPage() {
                     width={10}
                     height={12}
                   />
-                  <span className="font-montserrat font-medium text-[12px] leading-[12px] tracking-[0px] uppercase text-[#45464D] text-left">
+                  <span className="font-montserrat font-medium text-[12px] leading-[12px] tracking-[0px] uppercase text-[#45464D] text-center">
                     ENTERPRISE<br />SECURE
                   </span>
                 </div>
@@ -158,7 +158,7 @@ export default function SignInPage() {
                     width={13}
                     height={13}
                   />
-                  <span className="font-montserrat font-medium text-[12px] leading-[12px] tracking-[0px] uppercase text-[#45464D] text-left">
+                  <span className="font-montserrat font-medium text-[12px] leading-[12px] tracking-[0px] uppercase text-[#45464D] text-center">
                     VERIFIED<br />WORKERS
                   </span>
                 </div>
