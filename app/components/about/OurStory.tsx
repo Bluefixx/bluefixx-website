@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function OurStory() {
   return (
-    <section className="w-full bg-white py-[64px] md:py-[96px] px-6 lg:px-[64px] relative overflow-hidden">
+    <section className="w-full bg-[#F7F9FB] py-[64px] md:py-[96px] px-6 lg:px-[64px] relative overflow-hidden">
       {/* Top Right Subtle Gradient Fade */}
-      <div 
+      <div
         className="absolute top-0 right-0 w-[300px] h-[300px] rounded-full blur-[64px] pointer-events-none"
         style={{
           backgroundColor: "#0051D5",
@@ -16,7 +16,7 @@ export default function OurStory() {
       {/* Main Container Card */}
       <div className="max-w-6xl mx-auto w-full bg-[#001B3D] rounded-[12px] p-[32px] md:p-[96px] relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
-          
+
           {/* Left Column: Story Text and CEO Info */}
           <div className="flex flex-col text-left">
             {/* Heading */}
@@ -33,7 +33,7 @@ export default function OurStory() {
             <div className="flex items-center gap-4">
               <div className="relative w-14 h-14 rounded-[12px] overflow-hidden flex-shrink-0">
                 <Image
-                  src="/images/ceo.png"
+                  src="/images/ceo.jpg"
                   alt="Ebuka Alumona"
                   fill
                   className="object-cover"

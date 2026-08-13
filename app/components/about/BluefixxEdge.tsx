@@ -24,12 +24,12 @@ const reasons = [
 
 export default function BluefixxEdge() {
   return (
-    <section className="w-full bg-white py-[64px] md:py-[96px] px-6 lg:px-[64px] relative overflow-hidden">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+    <section className="w-full bg-[#F7F9FB] py-[64px] md:py-[96px] px-6 lg:px-[64px] relative overflow-hidden">
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-20 items-center justify-between">
         
-        {/* Left Column: Image with Overlay Tag */}
-        <div className="relative w-full max-w-[500px] lg:max-w-none mx-auto pr-6 pb-6">
-          <div className="relative w-full aspect-[4/3] md:aspect-[1.1] rounded-[8px] overflow-hidden shadow-[0px_16px_40px_-8px_rgba(88,92,95,0.08)]">
+        {/* Left Column: Image with Overlay Tag (Wider) */}
+        <div className="relative w-full lg:w-[54%] max-w-[500px] lg:max-w-none mx-auto pr-6 pb-6 flex-shrink-0">
+          <div className="relative w-full aspect-[4/5] rounded-[8px] overflow-hidden shadow-[0px_16px_40px_-8px_rgba(88,92,95,0.08)]">
             <Image
               src="/images/path4.png"
               alt="Professional hand shake"
@@ -61,8 +61,8 @@ export default function BluefixxEdge() {
           </div>
         </div>
 
-        {/* Right Column: Text and Features List */}
-        <div className="flex flex-col text-left">
+        {/* Right Column: Text and Features List (Narrower) */}
+        <div className="w-full lg:w-[40%] flex-shrink-0 flex flex-col justify-center text-left">
           {/* Tag */}
           <span className="font-montserrat font-medium text-[14px] leading-[20px] tracking-[0px] text-[#001B40] uppercase mb-2">
             THE BLUEFIXX EDGE
