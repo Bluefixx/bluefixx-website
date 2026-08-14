@@ -1,6 +1,6 @@
 import React from "react";
-import Input, { TextArea } from "./Input";
-import Button from "./Button";
+import Button from "../Button";
+import Input, { TextArea } from "../Input";
 
 export default function ContactForm() {
   return (
@@ -51,7 +51,7 @@ export default function ContactForm() {
             </select>
             <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 7.5L10 12.5L15 7.5" stroke="#44474E" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M5 7.5L10 12.5L15 7.5" stroke="#44474E" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </div>
           </div>

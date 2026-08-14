@@ -14,8 +14,8 @@ const contactCards = [
   {
     title: "Email Us",
     sub: "We typically reply within 24 hours.",
-    contact: "hello@bluefixx.com",
-    icon: "/icons/email.svg",
+    contact: "info@bluefixxllp.com",
+    icon: "/icons/mail-black.svg",
     mobileIcon: "/icons/email-mobile.svg",
     bgColor: "bg-[#F9B72C]",
     mobileBgColor: "bg-[#2170E4]",
@@ -47,20 +47,20 @@ export default function ContactDetails() {
             <Image
               src={card.icon}
               alt={card.title}
-              width={24}
-              height={24}
+              width={20}
+              height={16}
             />
           </div>
 
           {/* Icon Container - Mobile */}
           <div
-            className={`md:hidden w-12 h-12 rounded-[12px] items-center justify-center flex-shrink-0 ${card.mobileBgColor}`}
+            className={`flex md:hidden w-12 h-12 rounded-[12px] items-center justify-center flex-shrink-0 ${card.mobileBgColor}`}
           >
             <Image
               src={card.mobileIcon}
               alt={card.title}
-              width={24}
-              height={24}
+              width={18}
+              height={18}
             />
           </div>
 
@@ -91,7 +91,7 @@ export default function ContactDetails() {
             fill
             className="object-cover"
           />
-          
+
           {/* Map Overlay Tag */}
           <div className="absolute bottom-4 left-4 right-4 bg-white rounded-[4px] p-2 flex items-center justify-between shadow-sm">
             <div className="flex items-center gap-2">
@@ -103,7 +103,7 @@ export default function ContactDetails() {
             <a href="#" className="font-poppins font-semibold text-[12px] text-[#0051D5] flex items-center gap-1">
               Get Directions
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="#0051D5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="#0051D5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </a>
           </div>
