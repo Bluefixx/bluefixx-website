@@ -10,12 +10,12 @@ const leaders = [
   {
     name: "Emmanuel Agbola",
     role: "CTO",
-    image: "/images/role2.png",
+    image: "/images/role2.jpg",
   },
   {
     name: "Abisoye Deborah",
     role: "Head of Operations",
-    image: "/images/role3.png",
+    image: "/images/role3.jpg",
   },
 ];
 
