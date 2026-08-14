@@ -71,10 +71,10 @@ export default function FAQContent() {
           ))}
         </div>
 
-        <div className="flex flex-col md:flex-row gap-8 lg:gap-12">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
           
           {/* Support Sidebar (Left on desktop, Second on mobile) */}
-          <div className="order-2 md:order-1 w-full md:w-[35%] lg:w-[30%]">
+          <div className="order-2 lg:order-1 w-full lg:w-[30%]">
             <div className="bg-[#D6E8FF] md:bg-[#EAF3FF] rounded-[12px] md:rounded-[8px] border border-[#ADC6FF4D] md:border-[#8EBBFF] p-6 md:p-8 flex flex-col gap-2 md:gap-6 h-fit">
               <div className="flex flex-col gap-2">
                 <h2 className="font-poppins font-bold text-[16px] md:text-[24px] leading-[24px] md:leading-[31.2px] text-black md:text-[#00355F]">
@@ -131,7 +131,7 @@ export default function FAQContent() {
           </div>
 
           {/* Accordion Content (Right on desktop, First on mobile) */}
-          <div className="order-1 md:order-2 w-full md:w-[65%] lg:w-[70%] flex flex-col gap-10">
+          <div className="order-1 lg:order-2 w-full lg:w-[70%] flex flex-col gap-10">
             {filteredFaqs.map((cat, catIdx) => (
               <div key={catIdx} className="flex flex-col gap-6">
                 {/* Category Header */}

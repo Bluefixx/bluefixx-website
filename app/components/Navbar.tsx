@@ -110,16 +110,21 @@ export default function Navbar() {
       {isOpen && (
         <div className="absolute top-[80px] left-0 w-full bg-white border-b border-neutral-300 lg:hidden flex flex-col px-6 py-8 gap-6 shadow-lg animate-in fade-in slide-in-from-top-5 duration-200">
           <div className="flex flex-col gap-5">
-            {mobileNavLinks.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className="font-sans text-[14px] leading-[16px] font-semibold text-[#102A43] hover:opacity-80 transition-opacity"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {mobileNavLinks.map((link) => {
+              const isActive = pathname === link.href;
+              return (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className={`font-sans text-[14px] leading-[16px] font-semibold text-[#102A43] hover:opacity-80 transition-opacity w-full pb-3 ${
+                    isActive ? "border-b border-[#001B40]" : "border-b border-transparent"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </div>
 
           <div className="mt-4">

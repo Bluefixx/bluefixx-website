@@ -77,7 +77,7 @@ export default function Footer() {
         </div>
 
         {/* Links Columns Container */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-8 lg:gap-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-16">
           {/* Platform */}
           <div className="flex flex-col gap-4">
             <h4 className="text-[14px] leading-[14px] font-semibold text-[#151C27] max-md:text-black tracking-[0.7px] max-md:tracking-[0.28px]">
@@ -132,9 +132,9 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Support (Desktop Only) */}
-          <div className="hidden lg:flex flex-col gap-4">
-            <h4 className="text-[14px] leading-[14px] font-semibold text-[#151C27] tracking-[0.7px]">
+          {/* Support */}
+          <div className="flex flex-col gap-4">
+            <h4 className="text-[14px] leading-[14px] font-semibold text-[#151C27] max-md:text-black tracking-[0.7px] max-md:tracking-[0.28px]">
               Support
             </h4>
             <div className="flex flex-col gap-3">
