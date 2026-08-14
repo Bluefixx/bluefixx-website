@@ -29,7 +29,7 @@ export default function Footer() {
   ];
 
   const supportLinks = [
-    { label: "Help Center", href: "/help" },
+    { label: "Help Center", href: "/faq" },
     { label: "Safe Hiring Guide", href: "/safe-hiring" },
     { label: "Trust & Safety", href: "/trust" },
   ];
