@@ -21,7 +21,7 @@ export default function TermsContent() {
   return (
     <section className="w-full bg-[#F7F9FB] py-[64px] md:py-[96px] px-6 lg:px-[64px]">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-8 lg:gap-12">
-        
+
         {/* Left Side: Navigation (Desktop Only) */}
         <div className="hidden lg:flex lg:w-1/4 flex-col gap-6 sticky top-24 h-fit">
           <h2 className="font-poppins font-bold text-[24px] leading-[31.2px] tracking-[0px] text-[#00355F] py-3">
@@ -37,11 +37,10 @@ export default function TermsContent() {
                   setActiveSection(section.id);
                   document.getElementById(section.id)?.scrollIntoView({ behavior: "smooth" });
                 }}
-                className={`pl-4 border-l-2 py-1 font-montserrat text-[16px] transition-colors ${
-                  activeSection === section.id
-                    ? "border-[#001B40] text-[#001B40] font-semibold"
-                    : "border-transparent text-[#525252] hover:text-[#001B40]"
-                }`}
+                className={`pl-4 border-l-2 py-1 font-montserrat text-[16px] transition-colors ${activeSection === section.id
+                  ? "border-[#001B40] text-[#001B40] font-semibold"
+                  : "border-transparent text-[#525252] hover:text-[#001B40]"
+                  }`}
               >
                 {section.title}
               </a>
@@ -57,7 +56,7 @@ export default function TermsContent() {
           >
             <div className="flex items-center gap-2">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 5H17M3 10H17M3 15H17" stroke="#001B40" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M3 5H17M3 10H17M3 15H17" stroke="#001B40" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Table of Contents
             </div>
@@ -65,10 +64,10 @@ export default function TermsContent() {
               className={`transition-transform ${isMobileMenuOpen ? "rotate-180" : ""}`}
               width="20" height="20" viewBox="0 0 20 20" fill="none"
             >
-              <path d="M5 7.5L10 12.5L15 7.5" stroke="#001B40" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M5 7.5L10 12.5L15 7.5" stroke="#001B40" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
-          
+
           {isMobileMenuOpen && (
             <div className="mt-2 bg-white border border-[#C2C7D1] rounded-[4px] overflow-hidden shadow-lg">
               {sections.map((section) => (
@@ -91,7 +90,7 @@ export default function TermsContent() {
 
         {/* Right Side: Main Content */}
         <div className="w-full lg:w-3/4 flex flex-col gap-8 md:gap-0 bg-transparent md:bg-white md:border md:border-[#C2C7D1] md:rounded-[8px] md:shadow-sm">
-          
+
           {/* Section 01: Acceptance of Terms */}
           <div id="acceptance" className="bg-white rounded-[12px] md:rounded-none border border-[#C2C7D1] md:border-none p-6 md:p-12 flex flex-col gap-6 md:gap-12 md:border-b md:border-[#C2C7D1]">
             <div className="flex flex-col gap-4">
@@ -237,8 +236,8 @@ export default function TermsContent() {
                   <div className="md:hidden flex-shrink-0">
                     <Image src="/icons/privacy.svg" alt="privacy" width={16} height={20} />
                   </div>
-                  <p className="font-montserrat italic md:italic text-[12px] md:text-[16px] leading-[16px] md:leading-[24px] text-[#001B40] md:text-[#525252] font-semibold md:font-normal">
-                    "We never sell your personal contact information to third-party advertisers. Your data is used solely to facilitate your success on the BlueFixx marketplace."
+                  <p className="font-montserrat normal md:italic text-[12px] md:text-[16px] leading-[16px] md:leading-[24px] text-[#001B40] md:text-[#525252] font-semibold md:font-normal">
+                    We never sell your personal contact information to third-party advertisers. Your data is used solely to facilitate your success on the BlueFixx marketplace.
                   </p>
                 </div>
               </div>
@@ -263,7 +262,7 @@ export default function TermsContent() {
                 </p>
               </div>
             </div>
-            
+
             {/* Footer Divider & Questions Section */}
             <div className="hidden md:block w-full h-[1px] bg-[#C2C7D1] mt-8 mb-8" />
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
