@@ -64,7 +64,7 @@ export default function WhyChooseCustomers() {
               />
             </div>
 
-            {/* Card 2: Transparent Pricing (30% on desktop) */}
+            {/* Card 2: Transparent Pricing 30% on desktop) */}
             <div className="lg:col-span-3 bg-white md:bg-[#F9F9F9] rounded-[2px] md:rounded-[4px] p-6 md:p-8 flex flex-col gap-4 border-0 md:border border-[#D1D1D1] shadow-[0px_4px_12px_rgba(0,0,0,0.05)] md:shadow-none">
               <div className="w-6 h-6 relative">
                 <Image src="/icons/pricing-blue.svg" alt="" width={33} height={27} className="object-contain text-[#001B40]" />
