@@ -11,7 +11,7 @@ export default function WhyChooseCustomers() {
 
         {/* Desktop Grid Layout */}
         <div className="flex flex-col gap-6">
-          {/* Row 1: 70/30 split */}
+          {/* Row 1 70/30 split */}
           <div className="grid grid-cols-1 lg:grid-cols-10 gap-6">
             {/* Card 1: Verified Professionals (70% on desktop) */}
             <div className="lg:col-span-7 bg-white md:bg-[#F9F9F9] rounded-[2px] md:rounded-[4px] border-0 md:border border-[#D1D1D1] shadow-[0px_4px_12px_rgba(0,0,0,0.05)] md:shadow-none overflow-hidden flex flex-col md:flex-row">
@@ -37,30 +37,30 @@ export default function WhyChooseCustomers() {
                 </div>
               </div>
               {/* Desktop Image part */}
-              <div 
+              <div
                 className="hidden md:block w-full md:w-[45%] h-[240px] md:h-auto relative overflow-hidden"
               >
                 {/* Desktop Slant Overlay */}
-                <div 
+                <div
                   className="absolute inset-0 bg-white md:bg-[#F9F9F9] z-10"
                   style={{ clipPath: 'polygon(0 0, 20% 0, 0 100%, 0 100%)' }}
                 />
-                <Image 
-                  src="/images/man.svg" 
-                  alt="Professional" 
-                  fill 
-                  className="object-cover md:scale-110 md:translate-x-4" 
+                <Image
+                  src="/images/man.svg"
+                  alt="Professional"
+                  fill
+                  className="object-cover md:scale-110 md:translate-x-4"
                 />
               </div>
             </div>
 
             {/* Mobile Image part for Card 1 (Standalone) */}
             <div className="md:hidden w-full h-[240px] relative rounded-[12px] overflow-hidden shadow-[0px_4px_12px_rgba(0,0,0,0.1)]">
-              <Image 
-                src="/images/man.svg" 
-                alt="Professional" 
-                fill 
-                className="object-cover" 
+              <Image
+                src="/images/man.svg"
+                alt="Professional"
+                fill
+                className="object-cover"
               />
             </div>
 
