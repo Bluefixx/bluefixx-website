@@ -113,7 +113,7 @@ export default function WhyChooseCustomers() {
                 </div>
               </div>
               <div className="absolute top-0 right-0 w-full h-full md:w-[60%] z-0">
-                {/* Gradient overlay */}
+                {/*Gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent md:from-[#F9F9F9] md:via-[#F9F9F9]/80 md:to-transparent z-10" />
                 <Image src="/images/man1.png" alt="Local Talent" fill className="object-cover opacity-60 md:opacity-100" />
               </div>
