@@ -16,7 +16,7 @@ export default function Home() {
         {/* Background Image (Centers and scales cover, clipping sides on mobile) */}
         <div className="absolute inset-0 bg-[url('/images/hero.png')] bg-cover bg-center bg-no-repeat" />
 
-        {/* Gradient Overlay using */}
+        {/* Gradient Overlay*/}
         <div className="absolute inset-0 bg-gradient-to-b from-[#000D1D]/40 via-[#000D1D]/75 to-[#000D1D]" />
 
         {/* Hero Content */}
