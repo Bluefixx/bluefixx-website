@@ -40,7 +40,7 @@ export default function ContactDetails() {
           key={idx}
           className="w-full bg-[#F2F4F6] rounded-[8px] border border-[#C4C6CF33] p-6 flex items-start gap-4"
         >
-          {/* Icon Container - Desktop */}
+          {/* Icon Container Desktop */}
           <div
             className={`hidden md:flex w-12 h-12 rounded-[12px] items-center justify-center flex-shrink-0 ${card.bgColor}`}
           >
