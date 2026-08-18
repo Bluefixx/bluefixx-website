@@ -52,7 +52,7 @@ export default function ContactDetails() {
             />
           </div>
 
-          {/* Icon Container - Mobile */}
+          {/* Icon Container -Mobile */}
           <div
             className={`flex md:hidden w-12 h-12 rounded-[12px] items-center justify-center flex-shrink-0 ${card.mobileBgColor}`}
           >
