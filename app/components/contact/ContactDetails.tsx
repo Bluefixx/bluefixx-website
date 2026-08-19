@@ -92,7 +92,7 @@ export default function ContactDetails() {
             className="object-cover"
           />
 
-          {/* Map Overlay Tag */}
+          {/*Map Overlay Tag */}
           <div className="absolute bottom-4 left-4 right-4 bg-white rounded-[4px] p-2 flex items-center justify-between shadow-sm">
             <div className="flex items-center gap-2">
               <div className="w-5 h-5 bg-[#0051D5] rounded-sm flex items-center justify-center">
