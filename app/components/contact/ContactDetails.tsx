@@ -84,7 +84,7 @@ export default function ContactDetails() {
       {/* Map Card */}
       <div className="w-full bg-[#F2F4F6] rounded-[8px] border border-[#C4C6CF33] overflow-hidden flex flex-col">
         <div className="relative w-full aspect-[16/9] md:aspect-[4/3] bg-gray-200">
-          {/* Placeholder for Map */}
+          {/*Placeholder for Map */}
           <Image
             src="/images/map-placeholder.png"
             alt="Map location"
