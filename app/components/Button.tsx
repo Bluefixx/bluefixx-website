@@ -28,7 +28,7 @@ export default function Button({
     tiny: "btn-tiny px-2 py-1 rounded-sm h-[26px]",
   };
 
-  // Variants as specified by 
+  // Variants as specified
   const variantClasses = {
     solid: "bg-primary-900 text-white hover:bg-primary-800 border border-transparent disabled:bg-primary-200",
     outlined: "bg-transparent text-primary-900 border-[2px] border-primary-900 hover:bg-primary-100 disabled:border-primary-200 disabled:text-primary-200",
