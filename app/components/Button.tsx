@@ -19,7 +19,7 @@ export default function Button({
   disabled = false,
   onClick,
 }: ButtonProps) {
-  // Sizes correspond to classes defined in globals.css
+  // Sizes correspond to classes defin in globals.css
   const sizeClasses = {
     giant: "btn-giant px-6 py-3 rounded-lg h-[54px]",
     large: "btn-large px-5 py-2.5 rounded-lg h-[44px]",
