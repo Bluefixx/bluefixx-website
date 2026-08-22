@@ -76,7 +76,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Links Columns Container */}
+        {/* Links Columns Container*/}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-16">
           {/* Platform */}
           <div className="flex flex-col gap-4">
