@@ -114,7 +114,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Legal */}
+          {/*Legal */}
           <div className="flex flex-col gap-4">
             <h4 className="text-[14px] leading-[14px] font-semibold text-[#151C27] max-md:text-black tracking-[0.7px] max-md:tracking-[0.28px]">
               Legal
