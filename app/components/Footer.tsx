@@ -152,7 +152,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/*Download Section (Responsive Alignment) */}
+      {/*Download Section (Responsive Alignment)*/}
       <div className="max-w-7xl mx-auto px-6 lg:px-[64px] flex flex-col items-start lg:items-end gap-3 pb-8">
         <span className="text-[12px] leading-[16px] font-medium text-[#001B40] tracking-normal uppercase">
           Download App
