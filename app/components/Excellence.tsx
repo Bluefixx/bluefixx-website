@@ -47,7 +47,7 @@ export default function Excellence() {
           </div>
         </div>
 
-        {/* Right: Content */}
+        {/*Right: Content */}
         <div className="flex flex-col gap-8 md:gap-10">
           <h2 className="font-poppins font-semibold md:font-bold text-[24px] md:text-[36px] leading-[31.2px] md:leading-[40px] tracking-[0px] text-[#191C1E] md:text-black">
             The Marketplace Designed <br /> for Excellence
