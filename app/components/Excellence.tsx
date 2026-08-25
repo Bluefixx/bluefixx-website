@@ -26,7 +26,7 @@ export default function Excellence() {
                 </div>
               </div>
             </div>
-            {/*Bottom Left */}
+            {/*Bottom Left*/}
             <div className="bg-white rounded-[20px] aspect-square flex items-center justify-center border border-black/5 -mt-8 lg:-mt-12 relative overflow-hidden">
               <div className="absolute inset-0 opacity-10">
                 <div className="absolute inset-0 flex items-center justify-center">
