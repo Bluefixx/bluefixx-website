@@ -12,7 +12,7 @@ export default function Footer() {
 
   const platformLinks = [
     { label: "Find Workers", href: "/customers" },
-    { label: "List Business", href: "/list-business" },
+    { label: "List Business", href: "/workers" },
     { label: "Apprenticeships", href: "/apprenticeships" },
   ];
 
