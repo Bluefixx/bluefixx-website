@@ -40,7 +40,7 @@ export default function Button({
       type={type}
       disabled={disabled}
       onClick={onClick}
-      className={`inline-flex items-center justify-center font-sans font-semibold transition-all duration-200 select-none ${variantClasses[variant]} ${sizeClasses[size]} ${className}`}
+      className={`inline-flex items-center justify-center font-sans font-semibold transition-all cursor-pointer duration-200 select-none ${variantClasses[variant]} ${sizeClasses[size]} ${className}`}
     >
       {children}
     </button>
