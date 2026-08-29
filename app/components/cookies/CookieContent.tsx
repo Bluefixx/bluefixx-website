@@ -98,7 +98,7 @@ export default function CookieContent() {
           </nav>
         </div>
 
-        {/*Mobile Dropdown Menu */}
+        {/*Mobile Dropdown Menu*/}
         <div className="lg:hidden w-full mb-6">
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
