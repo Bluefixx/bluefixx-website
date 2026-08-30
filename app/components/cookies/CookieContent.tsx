@@ -17,9 +17,9 @@ export default function CookieContent() {
   const [activeSection, setActiveSection] = useState("what");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Cookie states
+  //Cookie states
   const [preferences, setPreferences] = useState({
-    essential: true, // Always true
+    essential: true, //Always true
     functional: false,
     analytics: false,
     targeting: false,
