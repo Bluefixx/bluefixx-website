@@ -27,7 +27,7 @@ export default function CookieContent() {
 
   const [saveStatus, setSaveStatus] = useState<"idle" | "saving" | "saved">("idle");
 
-  // Load preferences from localStorage on mount
+  //Load preferences from localStorage on mount
   useEffect(() => {
     try {
       const stored = localStorage.getItem("bluefixx-cookie-consent");
