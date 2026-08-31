@@ -1,6 +1,7 @@
 import React from "react";
 
 type ButtonProps = {
+  id?: string;
   variant?: "solid" | "outlined" | "white";
   size?: "giant" | "large" | "medium" | "small" | "tiny";
   children: React.ReactNode;
@@ -11,6 +12,7 @@ type ButtonProps = {
 };
 
 export default function Button({
+  id,
   variant = "solid",
   size = "medium",
   children,
@@ -37,6 +39,7 @@ export default function Button({
 
   return (
     <button
+      id={id}
       type={type}
       disabled={disabled}
       onClick={onClick}
