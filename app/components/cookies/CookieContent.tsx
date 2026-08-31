@@ -72,7 +72,7 @@ export default function CookieContent() {
     <section className="w-full bg-[#F7F9FB] py-[64px] md:py-[96px] px-6 lg:px-[64px]">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-8 lg:gap-12">
 
-        {/*Left Side: Navigation (Desktop Only) */}
+        {/*Left Side: Navigation (Desktop Only)*/}
         <div className="hidden lg:flex lg:w-1/4 flex-col gap-6 sticky top-24 h-fit">
           <h2 className="font-poppins font-bold text-[24px] leading-[31.2px] tracking-[0px] text-[#00355F] py-3">
             Contents
