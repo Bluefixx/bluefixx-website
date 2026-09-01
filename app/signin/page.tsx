@@ -20,7 +20,7 @@ export default function SignInPage() {
       {/*Semi-transparent dark overlay to match hero aesthetics*/}
       <div className="absolute inset-0 bg-[#000D1D]/20 pointer-events-none" />
 
-      {/* Mobile Submission Background Overlay (Blur & Gradient) */}
+      {/*Mobile Submission Background Overlay (Blur & Gradient) */}
       {isSubmitted && (
         <>
           <div className="absolute inset-0 bg-[#F7F9FB]/10 backdrop-blur-md md:backdrop-blur-none pointer-events-none md:hidden z-0" />
