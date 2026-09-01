@@ -17,7 +17,7 @@ export default function SignInPage() {
 
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-[url('/images/hero.png')] bg-cover bg-center bg-no-repeat px-4 py-8 md:p-6 relative overflow-hidden">
-      {/*Semi-transparent dark overlay to match hero aesthetics */}
+      {/*Semi-transparent dark overlay to match hero aesthetics*/}
       <div className="absolute inset-0 bg-[#000D1D]/20 pointer-events-none" />
 
       {/* Mobile Submission Background Overlay (Blur & Gradient) */}
