@@ -28,7 +28,7 @@ export default function SignInPage() {
         </>
       )}
 
-      {/* Main Form Card */}
+      {/*Main Form Card */}
       <div className={`relative z-10 w-full max-w-[500px] rounded-[12px] md:rounded-[32px] p-[32px] md:p-[56px] border-none md:border md:border-[#C3C6D74D] shadow-[0px_4px_20px_0px_rgba(15,23,42,0.05)] md:shadow-[0px_16px_40px_-8px_rgba(88,92,95,0.16)] overflow-hidden transition-all duration-300 ${isSubmitted
         ? "bg-white/80 backdrop-blur-sm md:bg-white md:backdrop-blur-none"
         : "bg-white"
