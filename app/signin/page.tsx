@@ -37,7 +37,7 @@ export default function SignInPage() {
         {/*Top-right bubble shape on desktop only*/}
         <div className="hidden md:block absolute -top-[80px] -right-[80px] w-[240px] h-[240px] bg-[#004AC60D] rounded-full pointer-events-none z-0" />
 
-        {/*Card Content Wrapper */}
+        {/*Card Content Wrapper*/}
         <div className="relative z-10 flex flex-col">
           {isSubmitted ? (
             <div className="flex flex-col text-center items-center">
