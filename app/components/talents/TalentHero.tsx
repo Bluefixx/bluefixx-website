@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Button from "../Button";
 import Link from "next/link";
 
@@ -28,12 +29,15 @@ export default function TalentHero() {
           </div>
         </div>
 
-        {/* Right: Square Placeholder Image */}
-        <div className="relative w-full aspect-square bg-[#F2F4F6] rounded-[20px] overflow-hidden border border-black/5">
-          <div className="absolute inset-0 flex items-center justify-center opacity-10">
-            <div className="w-full h-[1px] bg-black rotate-45"></div>
-            <div className="w-full h-[1px] bg-black -rotate-45"></div>
-          </div>
+        {/* Right: Talent Hero Image */}
+        <div className="relative w-full aspect-square rounded-[20px] overflow-hidden border border-black/5 shadow-[0px_4px_20px_rgba(0,0,0,0.05)]">
+          <Image
+            src="/images/talents.png"
+            alt="Become an Apprentice and Build Your Future"
+            fill
+            className="object-cover"
+            priority
+          />
         </div>
       </div>
     </section>

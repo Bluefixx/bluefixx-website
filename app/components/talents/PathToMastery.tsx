@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 const masterySteps = [
@@ -38,6 +40,26 @@ const masterySteps = [
 ];
 
 export default function PathToMastery() {
+  const bannerRef = useRef<HTMLDivElement>(null);
+  const [bannerInView, setBannerInView] = useState<boolean>(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.target === bannerRef.current && entry.isIntersecting) {
+            setBannerInView(true);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    if (bannerRef.current) observer.observe(bannerRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="w-full py-[64px] md:py-[96px] px-4 md:px-6 lg:px-[64px] bg-white">
       <div className="max-w-6xl mx-auto flex flex-col items-center">
@@ -76,11 +98,31 @@ export default function PathToMastery() {
           </div>
         </div>
 
-        {/* Bottom Placeholder */}
-        <div className="w-full mt-12 md:mt-16 aspect-video md:aspect-[3/1] bg-[#ECEEF0] md:bg-[#F2F2F2] rounded-[12px] md:rounded-[4px] border-[2px] md:border border-[#C6C6CD] md:border-[#D1D1D1] relative overflow-hidden">
-          <div className="absolute inset-0 flex items-center justify-center opacity-10">
-            <div className="w-full h-[1px] bg-black rotate-[10deg]"></div>
-            <div className="w-full h-[1px] bg-black -rotate-[10deg]"></div>
+        {/* Learn Today, Earn Tomorrow Banner */}
+        <div
+          ref={bannerRef}
+          className="w-full mt-12 md:mt-16 bg-[#0EA5E9] rounded-[16px] md:rounded-[4px] relative overflow-hidden flex flex-col md:flex-row items-center justify-between px-6 sm:px-8 md:px-10 lg:px-14 xl:px-16 pt-8 md:pt-0 min-h-[360px] md:min-h-[300px] lg:min-h-[360px] xl:min-h-[400px]"
+        >
+          {/* Text Content */}
+          <div className="flex flex-col text-center md:text-left z-10 py-2 md:py-6 lg:py-8 shrink-0">
+            <h3 className="font-poppins font-bold text-[36px] sm:text-[40px] md:text-[50px] lg:text-[76px] xl:text-[110px] leading-[127%] md:leading-[1] xl:leading-[114px] tracking-[-2px] sm:tracking-[-4px] md:tracking-[-3px] lg:tracking-[-4px] xl:tracking-[-6px] text-white select-none">
+              <span className="block">Learn Today<span className="hidden md:inline">,</span></span>
+              <span className="block">Earn Tomorrow</span>
+            </h3>
+          </div>
+
+          {/* Apprentice Screen Image */}
+          <div className="w-[260px] sm:w-[280px] md:w-[320px] lg:w-[380px] xl:w-[440px] flex items-end justify-center self-end mt-4 md:mt-0 shrink-0">
+            <img
+              src="/images/apprentice-screen.png"
+              alt="My Apprenticeship Screen"
+              className="w-full h-auto object-contain object-bottom pointer-events-none select-none"
+              style={{
+                transform: bannerInView ? "translateY(0%)" : "translateY(24%)",
+                opacity: bannerInView ? 1 : 0.6,
+                transition: "transform 1000ms cubic-bezier(0.16, 1, 0.3, 1), opacity 800ms ease-out",
+              }}
+            />
           </div>
         </div>
       </div>

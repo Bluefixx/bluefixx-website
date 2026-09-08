@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Button from "../Button";
 import Link from "next/link";
 
@@ -28,12 +29,15 @@ export default function WorkerHero() {
           </div>
         </div>
 
-        {/* Right: Placeholder Image */}
-        <div className="relative w-full aspect-video md:aspect-[4/3] lg:aspect-video bg-[#F2F4F6] rounded-[20px] overflow-hidden border border-black/5">
-          <div className="absolute inset-0 flex items-center justify-center opacity-10">
-            <div className="w-full h-[1px] bg-black rotate-45"></div>
-            <div className="w-full h-[1px] bg-black -rotate-45"></div>
-          </div>
+        {/* Right: Worker Hero Image */}
+        <div className="relative w-full aspect-video md:aspect-[4/3] lg:aspect-video rounded-[20px] overflow-hidden shadow-[0px_4px_20px_rgba(0,0,0,0.05)] border border-black/5">
+          <Image
+            src="/images/workers.png"
+            alt="BlueFixx Workers"
+            fill
+            className="object-cover"
+            priority
+          />
         </div>
       </div>
     </section>
