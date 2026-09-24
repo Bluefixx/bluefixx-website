@@ -12,11 +12,11 @@ const leaders = [
     role: "CTO",
     image: "/images/role2.jpg",
   },
-  {
-    name: "Abisoye Deborah",
-    role: "Head of Operations",
-    image: "/images/role3.jpg",
-  },
+  // {
+  //   name: "Abisoye Deborah",
+  //   role: "Head of Operations",
+  //   image: "/images/role3.jpg",
+  // },
 ];
 
 export default function Leadership() {
