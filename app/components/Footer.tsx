@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export default function Footer() {
   const socialLinks = [
-    { name: "facebook", icon: "/icons/facebook.svg", href: "https://facebook.com" },
-    { name: "instagram", icon: "/icons/instagram.svg", href: "https://instagram.com" },
-    { name: "linkedin", icon: "/icons/linkedin.svg", href: "https://linkedin.com" },
-    { name: "x", icon: "/icons/x.svg", href: "https://x.com" },
+    { name: "facebook", icon: "/icons/facebook.svg", href: "https://www.facebook.com/BlueFixx" },
+    { name: "instagram", icon: "/icons/instagram.svg", href: "https://www.instagram.com/bluefixx_llp" },
+    { name: "linkedin", icon: "/icons/linkedin.svg", href: "https://www.linkedin.com/company/bluefixxllp" },
+    { name: "x", icon: "/icons/x.svg", href: "https://x.com/bluefixxllp" },
   ];
 
   const platformLinks = [
