@@ -63,7 +63,7 @@ export default function Home() {
       </section>
 
       {/* Partners Section */}
-      <Partners />
+      {/* <Partners /> */}
 
       {/* Offers Section */}
       <Offers />
@@ -75,7 +75,7 @@ export default function Home() {
       <WhyChoose />
 
       {/* Testimonials Section */}
-      <Testimonials />
+      {/* <Testimonials /> */}
 
       {/* FAQ Section */}
       <FAQ />
