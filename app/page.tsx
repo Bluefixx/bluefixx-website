@@ -80,7 +80,7 @@ export default function Home() {
       {/* FAQ Section */}
       <FAQ />
 
-      {/* Get Started Section */}
+      {/*Get Started Section */}
       <GetStarted />
     </div>
   );
