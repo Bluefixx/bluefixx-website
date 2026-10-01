@@ -74,7 +74,7 @@ export default function Home() {
       {/* Why Choose Section */}
       <WhyChoose />
 
-      {/* Testimonials Section */}
+      {/*Testimonials Section */}
       {/* <Testimonials /> */}
 
       {/* FAQ Section */}
