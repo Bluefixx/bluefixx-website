@@ -11,7 +11,7 @@ export default function CustomersPage() {
       <CustomerHero />
       <WhyChooseCustomers />
       <HowItWorks />
-      <SuccessStories />
+      {/* <SuccessStories /> */}
       <CustomerGetStarted />
     </div>
   );

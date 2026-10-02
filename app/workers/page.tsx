@@ -11,7 +11,7 @@ export default function WorkersPage() {
       <WorkerHero />
       <WorkerBenefits />
       <MembershipPath />
-      <WorkerTestimonials />
+      {/* <WorkerTestimonials /> */}
       <WorkerCTA />
     </div>
   );
